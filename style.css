@@ -1,0 +1,701 @@
+body{
+  background: #1d1d1d;
+  color: #ededed;
+}
+.logooo{
+  position: fixed;
+  width: 50px;
+  height: 20px;
+  top: 35px;
+  left: 30px;
+  z-index: 2;
+}
+.bore{
+  position: fixed;
+  z-index: 2;
+  float: right;
+  width: 100%;
+}
+
+.check {
+  position: absolute;
+  list-style-type: none;
+  margin: 0;
+  padding: 20px;
+  overflow: hidden;
+  background-color: #1d1d1d;
+  left: -9px;
+  right: 8px;
+  height: 35px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  top: -8px;
+  box-shadow: 1px 1px 6px #ff004f;
+}
+.cool {
+  float: right;
+}
+.cool a {
+  display: block;
+  color:whitesmoke;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  font-weight: 530;
+  position: relative;
+}
+ .cool a:hover {
+ background-color:#1d1d1d;
+  opacity: 90%;
+  color:#ff004f;
+}
+.cool {
+    list-style-type: none;
+}
+.home{
+  position: relative;
+  width: 100%;
+  height: 97vh;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  padding: 0px 0% 0;
+}
+.home .home-detail{
+  max-width: 600px;
+}
+.home-detail h3{
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: relative;
+  left: 100px;
+  top: 120px;
+  color: #fff;
+}
+.home-detail p{
+  font-size: 16px;
+  position: relative;
+  margin: 20px 0 40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  left: 100px;
+  top: 110px;
+  color: #fff;
+}
+.home .btn-box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  width: 345px;
+}
+.btn-box a{
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  color: #081b29;
+  background:#ff004f;
+  border: 2px solid #ff004f;
+  height: 75%;
+  width: 150px;
+  text-decoration: none;
+  border-radius: 8px;
+  z-index: 1;
+  font-weight: 600;
+  letter-spacing: 1;
+  top: 87px;
+  left: 100px;
+} 
+.btn-box a:hover{
+  color: #ff004f;
+}
+.btn-box a:nth-child(2){
+  background: transparent;
+  color: #ff004f;
+}
+.btn-box a:nth-child(2):hover{
+  color: #081b29;
+}
+.btn-box a::before{
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 8px;
+  content: '';
+  height: 100%;
+  width: 0;
+  background: #081b29;
+  z-index: -1;
+  overflow: hidden;
+  transition: .6s;
+}
+ .btn-box a:hover::before{
+  width: 100%;
+}
+.btn-box a:nth-child(2)::before{
+  background: #ff004f;
+}
+.social-meadia a{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  border: 2px solid #ff004f;
+  border-radius: 50px;
+  background: transparent;
+  text-decoration: none;
+  font-size: 17px;
+  z-index: 1;
+  overflow: hidden;
+  color: #ff004f;
+  transition: .5s;
+  position: relative;
+  top: 100px;
+  left: 100px;
+}
+.social-meadia a:hover{
+  color: #081b29;
+}
+.social-meadia a::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #ff004f;
+  height: 100%;
+  width: 0%;
+  border-radius: 50%;
+  z-index: -1;
+  transition: .5s;
+}
+.social-meadia a:hover::before{
+  width: 100%;
+}
+img{
+  height: 344px;
+    position: absolute;
+    right: 116px;
+    bottom: 212px;
+}
+.shape{
+  position: relative;
+  top: -147px;
+}
+.backr{
+  position: relative;
+  top: 290px;
+}
+/*.................................................... ABOUT.................................................... */
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 600px;
+  height: 400px;
+  background: #081b29;
+  box-sizing:border-box;
+  border-radius: 10px;
+  top: 900px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  left: 750px;
+}
+.box h3{
+  position: relative;
+  left: -15px;
+  color: #fff;
+  text-align: center;
+  background: #ff004f;
+  /* background: #169fff; */
+  margin: 40px 0 0;
+  padding: 5px 0;
+  font-size: 30px;
+  text-transform: uppercase;
+  width: 630px;
+  text-shadow: 0 5px 10px rgba(0, 0, 0, .5);
+}
+.box h3::before
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 100%;
+  background: #085a93;
+  transform-origin: top left;
+  transform: skewY(-50deg);
+  transition: transform .5s;
+  z-index: -1;
+}
+.box:hover h3::before
+{
+  transform: skewY(50deg);
+
+}
+.box h3::after
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 15px;
+  height: 100%;
+  background: #085a93;
+  transform-origin: top right;
+  transform: skewY(-50deg);
+  transition: transform .5s;
+  z-index: -1;
+}
+.box:hover h3::after
+{
+  transform: skewY(50deg);
+}
+.box p{
+  padding: -1px 31px;
+  color: #fff;
+  text-align: center;
+}
+.man{
+  position: absolute;
+  top: 780px;
+  left: 50px;
+}
+
+/* ..................................................CARD STYLE................................................ */
+
+.service2
+{
+  position: relative;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  top: 640px;
+  color: #fff;
+}
+.servicecolor{
+  color: #ff004f;
+}
+.container
+{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 1200px;
+  flex-wrap: wrap;
+  z-index: 1;
+  top: 670px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container .card
+{
+  position: relative;
+  width: 280px;
+  height: 400px;
+  margin: 30px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0,0.5);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+}
+.container .card .content
+{
+  padding: 20px;
+  text-align: center;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: 0.5s;
+}
+.container .card:hover .content
+{
+  transform: translateY(0px);
+  opacity: 1;
+
+}
+.container .card .content h2
+{
+  position: absolute;
+  top: -80px;
+  right: 30px;
+  font-size: 80px;
+  color:rgba(255, 255, 255, 0.05);
+  pointer-events: none;
+}
+.container .card .content h3
+{
+  font-size: 18px;
+  color: #fff;
+  z-index: 1;
+
+}
+.container .card .content p
+{
+  font-size: 1em;
+  color: #fff;
+  font-weight: 300;
+}
+.container .card .content a
+{
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  margin-top: 15px;
+  background: #ff004f;
+  color: #000;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  box-shadow: 0.5px 15px rgba(0, 0, 0,0.2);
+}
+/*........................................... SKILL STYLE................................................... */
+.killer{
+  background-color: #081b29;
+}
+.h1{
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.skillcolor{
+  color: #ff004f;
+}
+.h3{
+  text-align: left;
+}
+.h3{
+  margin: 5px;
+}
+.skill{
+  position: relative;
+  top: 650px;
+  width: 500px;
+  margin: 40px auto;
+  color: #fff;
+  padding: 20px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10x 10px rgba(0, 0, 0, 0.22);
+}
+.skill .lil
+{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 20px 0;
+  padding: 10px;
+  list-style-type: none;
+}
+.bar{
+  background: #353b48;
+  display: block;
+  height: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.bar:hover{
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.12),0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.bar span{
+  height: 20px;
+  float: left;
+  background: linear-gradient(135deg, rgba(236,0,140,1)0%, rgba(252,103,103,1)100%);
+}
+.html{
+  width: 90%;
+  animation: html 3s;
+}
+.css{
+  width: 70%;
+  animation: css 3s;
+}
+.python{
+  width: 45%;
+  animation: python 3s;
+}
+.javascript{
+  width: 60%;
+  animation: javascript 3s;
+}
+@keyframes html{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 90%;
+  }
+}
+@keyframes css{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 70%;
+  }
+}
+@keyframes python{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 45%;
+  }
+}
+@keyframes javascript{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 60%;
+  }
+}
+/* ....................................................CONTACT ...................................................*/
+
+.containerc{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 610px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.containerc form{
+  width: 670px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  flex-wrap: wrap;
+}
+.contactcolor{
+  color: #ff004f;
+}
+.containerc form .h1c{
+  color: #fff;
+  font-weight: 500;
+  margin-top: 20px;
+  width: 500px;
+  text-align: center;
+}
+.containerc form input{
+  width: 290px;
+  height: 40px;
+  padding-left: 10px;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #fff;
+}
+.containerc form #lastname,
+.containerc form #mobile{
+  margin-left: 20px;
+}
+.containerc form .h4c{
+  color: #fff; 
+  font-weight: 300;
+  width: 600px;
+  margin-top: 20px;
+}
+.containerc form .textc{
+  background: none;
+  border: none;
+  border-bottom: 2px solid #fff;
+   color: #fff;
+  font-weight: 200;
+  font-size: 15px;
+  padding: 10px;
+  outline: none;
+  min-width: 600px;
+  max-width: 600px;
+  min-height: 80px;
+  max-height: 80px;
+}
+.textc::-webkit-scrollbar{
+  width: 1rem;
+}
+.textc::-webkit-scrollbar-thumb{
+  background-color: rgba(194, 194, 194, 0.713);
+}
+.containerc form #button{
+  border: none;
+  background: #fff;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #333;
+  width: 100px;
+  padding: 0;
+  margin-right: 500px;
+  margin-bottom: 30px;
+  transition: 0.3s;
+}
+.containerc form #button:hover{
+  opacity: 0.7;
+}
+
+/* .............................................FOOTER.....................................................  */
+
+
+.social-meadiaf2222
+{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.headfzzz{
+  position: absolute;
+  left: 50px;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  top: 3000px;
+}
+.iconf2{
+  position: relative;
+  top: 15px;
+  font-size: 35px;
+}
+.iconf2 a{
+  color: #fff;
+}
+.iconf2 a:hover{
+  color: #ff004f;
+}
+.contentfz{
+  position: relative;
+  top: 40px;
+  color: #666;
+}
+.contentfz a{
+  text-decoration: none;
+  color: #333;
+}
+.contentfz a:hover{
+  color: #085a93;
+}
+.headfzz{
+  position: absolute;
+  left: 500px;
+  top: 3000px;
+  justify-content: left;
+  align-items: left;
+}
+.ulf2{
+  position: relative;
+  top: 10px;
+  list-style-type: none;
+  right: 38px;
+  
+}
+.ulf2 a{
+  text-decoration: none;
+  color: #666;
+}
+.ulf2 a:hover{
+  color: #ededed;
+}
+.headzfff{
+  position: absolute;
+  top: 3000px;
+  left: 870px;
+  justify-content: center;
+  align-items: center;
+}
+.contentf22
+{
+ color: #666;
+ position: relative;
+ top: 10px;
+}
+.contentf22 a:hover{
+  color:#085a93;
+}
+.headzfff a{
+  text-decoration: none;
+  color: #333;
+}
+hr{
+  position: absolute;
+  top: 3300px;
+}
+/* .................................nalksnaskdnj */
+
+/* cdiosINO */
+@media (max-width:450px){
+  .backr{
+    width: 50px;
+    height: 50px;
+  }
+  .shape{
+    position: absolute;
+    width: 153px;
+    height: 153px;
+    right: 278px;
+    top: -325px;
+
+  }
+  .boy{
+    width: 143px;
+    height: 143px;
+    right: 280px;
+    position: absolute;
+    bottom: 237px;
+  }
+  .home-detail h3{
+    font-size: 10px;
+    left: 160px;
+    top: 25px;
+  }
+  .home-detail p{
+    font-size: 8px;
+    left: 160px;
+    top: 25px;
+    padding-right: 154px;
+  }
+  .home .btn-box{
+    width: 80px;
+    height: 20px;
+    font-size: 5px;
+    top: 45px;
+  }
+  .btn-box a{
+    left: 160px;
+    top: -7px;
+  }
+  .social-meadia a{
+    left: 160px;
+    width: 12px;
+    height: 12px;
+    font-size: 6px;
+    top: -8px;
+  }
+  .box{
+    position: absolute;
+    top: 569px;
+    width: 349px;
+    height: 308px;
+    left: 221px;
+}
+.box p{
+  font-size: 10px;
+  padding: 10px 10px;
+}
+.box h3{
+  width: 430px;
+}
+.service2{
+  top: 300px;
+}
+.container{
+  top: 320px;
+}
+
+}
+
